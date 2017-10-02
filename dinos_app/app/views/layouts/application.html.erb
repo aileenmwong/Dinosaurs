@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DinosApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <header>
+    <h1>My Website for Dinos!</h1>
+    <ul>
+      <li><%link_to 'See all Dinos', dinos_path%></li>
+      <li>Maybe some other menu item</li>
+      <li>And another menu item</li>
+    </ul>
+  </header>
+    <footer>
+      <ul>
+        <li>About us</li>
+        <li>Team</li>
+        <li>Terms and conditions</li>
+      </ul>
+    </footer>
+  </body>
+</html>
