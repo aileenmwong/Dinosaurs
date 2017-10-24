@@ -5,6 +5,15 @@
 <!-- [TO DO: ] insert the logic to render all dinos as from the database passe from the index action -->
 <!-- Each dino should be a link to a show page for that particular dino  -->
 
+
+
   <img src="https://thumbs.dreamstime.com/x/cute-green-dinosaur-cartoon-illustration-33993033.jpg" alt="dino pic">
+</br>
+  <p><%= link_to "Create new dino", new_dino_path %></p>
   <p><%= link_to "Back to home page", welcome_path %></p>
 </div>
+</br>
+  <% @dinos.each do |dino|%>
+    <h1><%= link_to dino.name, dino_path(dino) %></h1>
+  <%end%>
+</br>
